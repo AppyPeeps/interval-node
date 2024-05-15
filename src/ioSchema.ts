@@ -474,6 +474,7 @@ const DISPLAY_SCHEMA = {
   DISPLAY_HTML: {
     props: z.object({
       html: z.string(),
+      dangerousSkipSanitization: z.boolean().optional(),
     }),
     state: z.null(),
     returns: z.null(),
